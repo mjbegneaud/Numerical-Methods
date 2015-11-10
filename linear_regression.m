@@ -55,8 +55,8 @@ function [a1, a0, r2] = linreg(x,y)
     xp = linspace(min(x),max(x),20)
     yp = a0 + a1*xp 
     plot(x,y,'o' , xp,yp)
-    xlabel = ('Velocity')
-    ylabel = ('Drag Force')
+    xlabel('Velocity')
+    ylabel('Drag Force')
     
     
 end
