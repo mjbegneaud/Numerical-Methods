@@ -31,11 +31,11 @@ function [A, B, C, xp, yp] = polyfit(m,x,y)
     L = length(xp);
 
     for i=1:1:L
-        sumxp=0
+        sumxp=0;
         for j=1:1:m+1
             sumxp = sumxp+(C(j)*xp(i)^(j-1));
         end
-        yp(i)=sumxp
+        yp(i)=sumxp;
     end
     
     plot(x,y,'o' , xp,yp)
